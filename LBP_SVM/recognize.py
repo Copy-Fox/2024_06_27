@@ -20,6 +20,7 @@ data = []
 labels = []
 
 # 학습 이미지를 순회합니다.
+
 for imagePath in paths.list_images(args["training"]):
     image = cv2.imread(imagePath)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
